@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/utile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about" ><i class="fa fa-1x fa-home cl"></i></a>
+        <a href="about.html" id="blog"><i class="fa fa-1x fa-address-card cl"></i></a>
+        <a href="buy.html" id="projects" ><i class="fa fa-shopping-cart cl"></i></a>
+        <a href="contact.html" id="contact" ><i class="fa fa-phone cl"></i></a>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <h2 style="text-align:center">You Can Login with Social Media or Manually</h2>
+            <div class="vl">
+                <span class="vl-innertext">or</span>
+            </div>
+
+            <div class="col">
+                <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+                <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                </a>
+                <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                    </i> Login with Google+
+                </a>
+            </div>
+
+            <div class="col">
+                <div class="hide-md-lg">
+                    <p>Or sign in manually:</p>
+                </div>
+
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login" >
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+    <div class="bottom-container">
+        <div class="row">
+            <div class="col">
+                <a href="signup.html" style="color:white" class="btn">Sign up</a>
+            </div>
+            <div class="col">
+                <a href="#" style="color:white" class="btn" onclick="forgetalet()">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function forgetalet(){
+        alert('Please check your email in order to reset your accoung.Regard! Arslan_chaudhry')
+    }
+</script>
+</body>
+
+</html>

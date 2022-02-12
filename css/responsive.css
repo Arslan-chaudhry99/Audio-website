@@ -1,0 +1,133 @@
+
+@media screen and (max-width: 300px){
+  .heading{
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 900px){
+  .main-container{
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows:400px 400px 400px 400px 400px;
+
+  }
+}
+
+@media screen and (max-width: 600px){
+  .main-container{
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+grid-template-rows:400px 400px 400px 400px 400px;
+  justify-content: space-between;
+
+  }
+}
+@media screen and (max-width: 330px){
+  .main-container{
+    grid-template-rows:400px 400px 400px 400px 400px 400px 400px 400px 400px;
+
+  }
+}
+@media screen and (max-width: 290px){
+  .main-container{
+    grid-template-rows:450px 450px 450px 450px 450px 450px 450px 450px 450px;
+
+  }
+}
+
+@media screen and (max-width: 660px){
+  .bgp-container-2-right-other-1{
+flex-direction: column;
+  }
+  .bgp-container-2-right-other-1 .play-song{
+    margin-right: 0%;
+  }
+  .bgp-container-2-right-other-1 .follow{
+    margin-right: 0%;
+    margin-bottom: 2px;
+  }
+}
+@media screen and (max-width: 426px)
+{
+  .bgp-container-2-right-other{
+    margin: 40px 0px;
+  }
+  .bgp-container-2-right-other .follow{
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 455px){
+  .bgp-container-2-right h1{
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 455px){
+  .bgp-container-2-right p{
+    font-size: 0.9rem;
+  }
+}
+/* @media screen and (max-width: 360px){
+ .bgp-container-1 .bgp-container-2-left{
+    display: none;
+  }
+  .bgp-container-1 .bgp-container-2-right{
+width: 100%;  }
+} */
+@media screen and (max-width: 450px){
+  /* .bgp-container-1 .bgp-container-2-left{
+     display: none;
+   } */
+   .bgp-container-1 .bgp-container-2-right{
+ width: 100%;  }
+ }
+ @media screen and (max-width: 340px){
+  .bgp-song-content h2{
+font-size: 0.8rem;
+font-weight: 100;
+  }
+ }
+ @media screen and (max-width: 340px){
+  .bgp-song-content p{
+font-size: 0.5rem;
+font-weight: 100;
+
+  }
+ }
+ @media screen and (max-width: 760px){
+  .bgp-container-2{
+    flex-direction: column;
+    
+  }
+ 
+ }
+ @media screen and (max-width: 450px){
+ .bgp-container-2 .bgp-container-2-left{
+    width: 100%;
+    
+  }
+ 
+ }
+ @media screen and (max-width: 450px){
+  .bottom-player{
+     top:10vh;
+     background: red;
+     
+   }
+  
+  }
+  @media screen and (max-width: 500px){
+   .bgp-navigation .bgp-navigation-right{
+      margin-right: 20px;
+    }
+  }
+  
+
+  /* for responsive navigation */
+
+  @media screen and (max-width: 850px) {
+    #pc-nav{
+      display: none;
+    }
+    .mobile-icon{
+      display: flex;
+    }
+  }

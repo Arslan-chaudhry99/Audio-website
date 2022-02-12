@@ -1,0 +1,259 @@
+*{
+margin: 0%;
+padding: 0%;
+font-family: var(--font2);
+}
+.navigation{
+    height: 55px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.logo{
+    color: white;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: var(--font2);
+    font-weight: bold;
+    
+}
+.navigation ul li :hover{
+color: rgb(238, 48, 48);
+}
+.navigation ul li {
+    list-style: none;
+    padding: 0px 18px;
+}
+.navigation ul{
+    display: flex;
+    margin-right: 88px;
+    
+}
+.user-container{
+    display: flex;
+}
+.sign-in{
+    height: 38px;
+    background: var();
+    width: 59px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--bodycolor);
+    border-radius: 28px;
+ }
+ .sign-in:hover{
+     background-color: var(--color);
+     border: 1px solid var(--color);
+ }
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.1s;
+    padding: 15px;
+    width: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 60px;
+    /* background-color: #04AA6D; */
+    background-color: var(--color);
+  }
+  
+  #blog {
+    top: 120px;
+    /* background-color: #2196F3; */
+    background-color: var(--color);
+
+  }
+  
+  #projects {
+    top: 180px;
+    /* background-color: #f44336; */
+    background-color: var(--color);
+
+  }
+  
+  #contact {
+    top: 240px;
+    background-color: var(--color);
+  }
+.navigation span img{
+    width: 37px;
+    margin-left: 35px;
+    
+}
+.slide-img{
+   width: 100%;
+    height:calc(100vh - 55px - 50px) ;
+    background-color: rebeccapurple;
+
+}
+.slide-img img{
+width: 100%;
+height:calc(100vh - 55px - 50px) ;
+
+}
+ .container{
+     height: auto;
+     background-color: var(--bodycolor);  
+     
+    }
+.heading{
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.heading h1:hover{
+    color: var(--color);
+    cursor: pointer;
+}
+ .main-container{
+     width: 90vw;
+     height: auto;
+     background-color: var(--bodycolor);
+    
+     grid-gap: 30px 20px;
+     display: grid;
+ grid-template-columns: 1fr 1fr 1fr ;
+ grid-template-rows:400px 400px 400px ;
+    justify-content: space-around;
+ }
+ .blogsport-items{
+    box-sizing: border-box;
+     /* border: 1px solid black; */
+     box-sizing: border-box;
+     color: rgb(236, 234, 234);
+     background-color: var(--main-bg-color);
+ }
+ 
+ .img
+{
+    width: 100%;
+    /* background-color: red; */
+    height: 60%;
+    
+}
+.card-content{
+    margin-top: 6px;
+    font-family: var(--font1);
+    font-size: 10px;
+    color: var(--color2);
+   
+}
+.card-content h1:hover{
+color: var(--color);
+}
+.card-content p{
+    font-size: 14px;
+font-weight: bolder;
+
+}
+.card-content p:hover{
+    color: var(--color);
+
+    
+}
+.card-content h1:hover{
+cursor: pointer;
+}
+.card-content a{
+    text-decoration: none;
+    color: white;
+}
+.blogsport-items p:hover{
+    color: var(--color);
+    
+     }
+     .blogsport-items p{
+      font-size: 15px;
+      font-weight: bolder;
+     }
+.blogsport-items hr{
+margin: 10px 10px;
+}
+.vw{
+    height: 22px;
+}
+.bgp-1{
+    padding: 10px;
+    font-family: var(--font2);
+
+}
+.footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: white;
+font-size: 17px;
+font-family: var(--font2);
+cursor: pointer;
+}
+.footer :hover{
+  color: var(--color);
+}
+
+/* for mobile */
+
+#disply-cat{
+    height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ list-style: none;
+ flex-direction: column;
+ display: none;
+ overflow: hidden;
+
+}
+#disply-cat a{
+color: white;
+text-decoration: none;
+
+
+}
+#disply-cat li{
+    margin: 15px;
+    
+    
+}
+#disply-cat li :hover{
+    color: var(--color);
+}
+.mobile-icon{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+display: none;
+}
+.mobile-icon :hover{
+    color: var(--color);
+}

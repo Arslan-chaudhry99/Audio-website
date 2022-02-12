@@ -1,0 +1,86 @@
+
+:root{
+--font1:'Roboto Condensed', sans-serif;
+--font2:'Lato', sans-serif;
+--font3: 'Montserrat', sans-serif;
+
+/* font-family: 'Montserrat', sans-serif; */
+--color:#ED145B;
+--color2:white;
+--main-bg-color: rgb(29, 29, 29);
+--bodycolor:rgb(60, 67, 74);
+--bodycolo1:rgb(21, 26, 32);
+
+
+}
+.m-auto{
+    margin: auto;
+}
+.blod{
+    font-weight: bold;
+}
+.bloder{
+    font-weight: bolder;
+}
+.m-buttom{
+    margin-bottom: 50px;
+}
+/* .fa{
+    color: white;
+    font-size: 21px;
+    margin-left: 40px;
+    font-weight: bolder;
+} */
+/* .fa:hover{
+    cursor: pointer;
+    color: var(--color);
+        font-size: 21px;
+
+} */
+.f-size{
+    font-size: 30px;
+}
+
+/* for globerl menu */
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.1s;
+    padding: 15px;
+    width: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    position: fixed;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 60px;
+    /* background-color: #04AA6D; */
+    background-color: var(--color);
+  }
+  
+  #blog {
+    top: 120px;
+    /* background-color: #2196F3; */
+    background-color: var(--color);
+
+  }
+  
+  #projects {
+    top: 180px;
+    /* background-color: #f44336; */
+    background-color: var(--color);
+
+  }
+  
+  #contact {
+    top: 240px;
+    background-color: var(--color);
+  }

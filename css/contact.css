@@ -1,0 +1,48 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+
+background-color: var(--bodycolor);
+color: white;
+font-family: var(--font1);
+}
+* {box-sizing: border-box;}
+body h1:hover{
+color: var(--color);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--bodycolor);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+  background-color: var(--bodycolor);
+  /* background-color: rgba(60, 67, 74, 0.4); */
+
+  color: white;
+  font-weight: bolder;
+}
+
+input[type=submit] {
+  background-color: var(--bodycolor);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--color);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: var(--main-bg-color);
+ 
+
+  padding: 20px;
+}
