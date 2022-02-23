@@ -1,160 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utile.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/blogpost.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utile.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/blogpost.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="bgp-navigation">
-            <div class="bgp-navigation-left">
-                <ul>
-                    <a href="">
-                        <li></li>
-                    </a>
-                </ul>
-            </div>
-            <div class="bgp-navigation-right" id="search-div">
-                <div class="search-right" id="search-right">
-                    <i class="fa  fa-search" onclick="query()"></i>
-                    <input type="text" placeholder="Search for music you love!" id="input">
-                </div>
-                <i class="fa  fa-adjust"></i>
-
-            </div>
-        </nav>
+      <nav class="bgp-navigation">
+        <div class="bgp-navigation-left">
+          <ul>
+            <a href="">
+              <li></li>
+            </a>
+          </ul>
+        </div>
+        <div class="bgp-navigation-right" id="search-div">
+          <div class="search-right" id="search-right">
+            <i class="fa fa-search" onclick="query()"></i>
+            <input
+              type="text"
+              placeholder="Search for music you love!"
+              id="input"
+              onkeyup="searchresults()"
+            />
+          </div>
+          <i class="fa fa-adjust"></i>
+        </div>
+      </nav>
     </header>
     <main>
-        <div id="mySidenav" class="sidenav">
-            <a href="index.html" id="about"><i class="fa fa-1x fa-home cl"></i></a>
-            <a href="about.html" id="blog"><i class="fa fa-1x fa-address-card cl"></i></a>
-            <a href="buy.html" id="projects"><i class="fa fa-shopping-cart cl"></i></a>
-            <a href="contact.html" id="contact"><i class="fa fa-phone cl"></i></a>
-        </div>
-        <div class="bgp-container-1">
-
-
-            <div class="bgp-container-2 m-auto">
-
-                <div class="bgp-container-2-left">
-                    <div class="bgp-container-2-left-img">
-                        <img src="img/pop.jpg" alt="" width="100%" height="100%">
-                    </div>
-                </div>
-                <div class="bottom-player m-auto">
-                    <input type="range" name="range" value="0" min="0" max="100" id="myprogressbar">
-                    <div class="bottom-icons">
-                        <i class="fa  fa-step-backward"></i>
-                        <i class="fa  fa-play-circle " id="player"></i>
-                        <i class="fa  fa-step-forward"></i>
-
-                    </div>
-                </div>
-
-                <div class="bgp-container-2-right">
-
-                    <h1>New pop Songs</h1>
-                    <p style="display: inline;">1.9 M Followers </p>•<span id="song-menu"
-                        style="color:white ; font-weight: bolder; font-size: 20px;"></span>
-                    <p style="display: inline;">Songs</p>
-                    <div class="bgp-container-2-right-other">
-                        <div class="bgp-container-2-right-other-1">
-                            <button class="play-song"><i class="fa fa-play"></i>Play Song</button>
-                            <button class="follow"><i class="fa fa-plus"></i>Follow</button>
-                            <button class="download"><i class="fa fa-download"></i>Download</button>
-                        </div>
-                        <div class="bgp-container-2-right-other-no2" style="display: flex; flex-direction: column;">
-                            <button id="copypop">copied!</button>
-                            <button class="shair" onclick="copy()"><i class="fa fa-share-alt"></i></button>
-                        </div>
-
-                    </div>
-
-                    <div id="container2" class="bgp-container-2-right-playlist">
-
-
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img src="" alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img src="" alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                        <div class="songitems">
-                            <span class="img" id="img">
-                                <img alt="img" width="100%" height="100%">
-                            </span>
-
-                           <span><h2 id="li"></h2></span>
-                          <span> <i class="fa fa-2x fa-play-circle"></i></span>
-                        </div>
-                    </div>
-                </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about"><i class="fa fa-1x fa-home cl"></i></a>
+        <a href="about.html" id="blog"
+          ><i class="fa fa-1x fa-address-card cl"></i
+        ></a>
+        <a href="buy.html" id="projects"
+          ><i class="fa fa-shopping-cart cl"></i
+        ></a>
+        <a href="contact.html" id="contact"><i class="fa fa-phone cl"></i></a>
+      </div>
+      <div class="bgp-container-1">
+        <div class="bgp-container-2 m-auto">
+          <div class="bgp-container-2-left">
+            <div class="bgp-container-2-left-img">
+              <img src="img/pop.jpg" alt="" width="100%" height="100%" />
             </div>
-        </div>
-        <div class="fot2">
+          </div>
+          <div class="bottom-player m-auto">
+            <input
+              type="range" name="range" value="0" min="0" max="100" id="myprogressbar"
+            />
+            <div class="bottom-icons">
+              <i class="fa fa-step-backward"></i>
+              <i class="fa fa-play-circle" id="player"></i>
+              <i class="fa fa-step-forward"></i>
+            </div>
+          </div>
 
+          <div class="bgp-container-2-right">
+            <h1>New pop Songs</h1>
+            <p style="display: inline">1.9 M Followers</p>
+            •<span
+              id="song-menu"
+              style="color: white; font-weight: bolder; font-size: 20px"
+            ></span>
+            <p style="display: inline">Songs</p>
+            <div class="bgp-container-2-right-other">
+              <div class="bgp-container-2-right-other-1">
+                <button class="play-song">
+                  <i class="fa fa-play"></i>Play Song
+                </button>
+                <button class="follow"><i class="fa fa-plus"></i>Follow</button>
+                <button class="download">
+                  <i class="fa fa-download"></i>Download
+                </button>
+              </div>
+              <div
+                class="bgp-container-2-right-other-no2"
+                style="display: flex; flex-direction: column"
+              >
+                <button id="copypop">copied!</button>
+                <button class="shair" onclick="copy()">
+                  <i class="fa fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+            <ul id="container2" class="bgp-container-2-right-playlist">
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img src="" alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img src="" alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+              <li class="songitems">
+                <span class="img" id="img">
+                  <img alt="img" width="100%" height="100%" />
+                </span>
+
+                <span><h4 id="li"></h4></span>
+                <span> <i class="fa fa-2x fa-play-circle"></i></span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="fot2"></div>
     </main>
     <footer class="footer">
-        <h4>Coder: Arslan_Chaudhry</h4>
-
+      <h4>Coder: Arslan_Chaudhry</h4>
     </footer>
     <script src="java/script.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>

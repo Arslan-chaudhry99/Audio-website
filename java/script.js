@@ -14,7 +14,6 @@ function copy() {
 }
 
 let songitems = Array.from(document.getElementsByClassName('songitems'));
-console.log(songitems[0])
 let playsg = new Audio('audio/cradle.mp3')
 let song = [
   { songname: "CRDLE", filepath: "audio/cradle.mp3", coverpath: "song-pics/cradle.jpg" },
@@ -30,13 +29,35 @@ let song = [
   { songname: "You are last", filepath: "audio/shape 0f you.mp3", coverpath: "song-pics/top4.jpg" }
 ]
 // search
+function searchresults(){
+  let input=document.getElementById('input');
+  let filter=input.value.toUpperCase();
+  songitems.forEach(
+    (element,i) => {
+     let ee= element.getElementsByTagName('h4')[0].innerText=song[i].songname
+     let iname=ee.toUpperCase()
+     if(iname.indexOf(filter)>-1){
+        document.getElementById('li').style.display='none'
+     }
+     else{
+       console.log('not')
+     }
+    }
+  )
+
+
+}
+
+
+
+// search
 
 
 songitems.forEach(
  
   (element,i) => {
     element.getElementsByTagName('img')[0].src = song[i].coverpath
-    
+    element.getElementsByTagName('h4')[0].innerText=song[i].songname
 // element.getElementsByTagName(h2).innerText=song[i].songname
   }
 )
