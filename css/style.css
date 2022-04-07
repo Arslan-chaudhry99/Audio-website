@@ -104,14 +104,16 @@ color: rgb(238, 48, 48);
 .slide-img{
    width: 100%;
     height:calc(100vh - 55px - 50px) ;
-    background-color: rebeccapurple;
+ 
 
 }
 .slide-img img{
 width: 100%;
 height:calc(100vh - 55px - 50px) ;
+object-fit: cover;
 
 }
+
  .container{
      height: auto;
      background-color: var(--bodycolor);  

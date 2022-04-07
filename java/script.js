@@ -14,7 +14,11 @@ function copy() {
 }
 
 let songitems = Array.from(document.getElementsByClassName('songitems'));
-let playsg = new Audio('audio/cradle.mp3')
+let playgnum=4
+let playsg = new Audio(`audio/no ${playgnum}.mp3`)
+ 
+
+
 let song = [
   { songname: "CRDLE", filepath: "audio/cradle.mp3", coverpath: "song-pics/cradle.jpg" },
   { songname: "MY LAST MADE", filepath: "audio/my last made.mp3", coverpath: "song-pics/last made.jpg" },
@@ -114,5 +118,29 @@ myprogressbar.addEventListener('change', () => {
   playsg.currentTime = myprogressbar.value * playsg.duration / 100;
 
 })
+
+
+
+// const makeallplays=()=>{
+//  Array.from(document.getElementsByClassName('play')).forEach((element)=>{
+//   element.classList.remove("fa-play-circle")
+//   element.classList.add("fa-pause-circle")
+
+// })
+// };
+
+// let makeallplays=Array.from(document.getElementsByClassName('play'))
+let makeallplays=document.getElementsByClassName('play')
+for(let i=0; i<makeallplays.length; i++){
+makeallplays[i].addEventListener("click",(e)=>{
+let b=e.target.id
+
+
+} 
+
+)};
+
+
+
 
 
